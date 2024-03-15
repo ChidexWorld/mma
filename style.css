@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:ital@1&family=Work+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+
+body {
+    /* height: 200vh; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E6E6DD;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header>img {
+    width: 5%;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 10rem;
+}
+
+.head1 {
+    display: flex;
+}
+
+header>div>h5 {
+    margin-right: 60px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart_container {
+    position: relative;
+}
+
+.counter {
+    position: absolute;
+    /* z-index: -1; */
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    width: 10%;
+    height: 70%;
+    text-align: center;
+    font-size: 12px;
+    opacity: 75%;
+    left: 1em;
+    bottom: 1px;
+    display: none;
+}
+
+header>div>i {
+    margin-right: 130px;
+    cursor: pointer;
+}
+
+header>div>div a>i {
+    margin-right: 130px;
+    color: black;
+}
+
+.fa-bars {
+    margin-left: 8rem;
+}
+
+.head1>h5 {
+    cursor: pointer;
+}
+
+/* active */
+.active {
+    background-color: #D1A365;
+    border-radius: 2px;
+    color: white;
+}
+
+/* drop down */
+.dropdown {
+    display: inline-block;
+    position: relative;
+
+}
+
+.dropdown_content {
+    position: absolute;
+    display: none;
+    background-color: #E6E6DD;
+    min-width: 160px;
+    z-index: 1;
+    margin-left: 8rem;
+    width: 15em;
+    text-align: start;
+    height: 18em;
+    overflow: hidden;
+}
+
+.dropdown_content>a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: block;
+    padding-top: 7px;
+    padding-left: 20px;
+}
+
+.dropdown_content>a:hover {
+    background-color: #fff;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+/* main section */
+/* main {
+} */
+
+
+/* whatsapp link on page */
+.whatsapp {
+    position: fixed;
+    z-index: 1;
+    left: 8em;
+    top: 35em;
+    cursor: pointer;
+}
+
+.first_section {
+    background-image: url("images/miti-qYreP9QOdrk-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main1_container {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.main1_container {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: -.02em;
+    color: azure;
+}
+
+.main1_container>h1 {
+    font-style: italic;
+    color: #D1A365;
+    letter-spacing: 10px;
+    font-size: 4rem;
+}
+
+.main1_container p {
+    animation-delay: 0.7s;
+}
+
+.main2_container>button {
+    width: 32rem;
+    height: 5rem;
+    margin-top: 1rem;
+    background-color: #ED7A7A;
+    font-style: normal;
+    letter-spacing: 10px;
+    font-size: x-large;
+    font-family: arial;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    margin-left: 18em;
+    margin-bottom: 1rem;
+    right: 0;
+    animation-delay: 1s;
+}
+
+/* slides section */
+.slide {
+    background-color: #E6E6DD;
+    padding-bottom: 3em;
+    padding-top: 1em;
+}
+
+.mySlides {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 20px grey;
+    padding-bottom: 4rem;
+    margin: 5rem 5rem 1rem 5rem;
+    background-color: white;
+}
+
+.mySlides>img {
+    width: 30rem;
+    height: 19em;
+    margin-top: 2.58rem;
+}
+
+.mySlides>div {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: -0.14px;
+}
+
+.mySlides>div>p {
+    font-size: 22px;
+}
+
+.mySlides>div>button {
+    width: 24rem;
+    height: 5rem;
+    background-color: #D1A365;
+    font-style: normal;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    box-shadow: none;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+
+.mySlides>div>p>span {
+    font-size: large;
+}
+
+.but {
+    display: flex;
+    justify-content: center;
+}
+
+.but>div>button {
+    margin: 0rem 1rem auto;
+    background-color: #D1A365;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+}
+
+.prev {
+    background-color: #D1A365;
+    width: 5rem;
+    height: 3rem;
+    text-align: center;
+    border: none;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+/* menu section  */
+
+.menu {
+    background-color: #ED7A7A;
+    margin: -2.5em 0 0 0;
+    text-align: center;
+}
+
+.menu div div>h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: xxx-large;
+}
+
+.menu div div button {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+
+.menu_content img {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: solid 2px yellow;
+    margin: 1.5em 0 0 0em;
+}
+
+.menu_content div:nth-child(1) {
+    background-color: #D1A365;
+    height: 9em;
+    border-radius: 1em 1em 0 2em;
+}
+
+.menu_content {
+    background-color: #E6E6DD;
+    width: 17em;
+    height: 22em;
+    border-radius: 1em 1em 1em 1em;
+    margin: 3em;
+}
+
+
+.menu_content div h3 {
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+    margin-left: 1em;
+}
+
+.menu_content div p {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    text-align: start;
+    margin-left: 1em;
+    text-wrap: auto;
+}
+
+.menu_content div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5em;
+    font-weight: bold;
+    font-style: normal;
+    font-size: larger;
+}
+
+.view_more button {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: #D1A365;
+    width: 12em;
+    height: 2em;
+    font-size: larger;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#first_row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.second_row {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.third_row {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* info section */
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info1 {
+    text-align: center;
+    margin-right: 2.5em;
+    margin-top: 1em;
+}
+
+.info1 div {
+    position: relative;
+    bottom: 0;
+    z-index: -1;
+    animation-delay: 1s;
+}
+
+.info1>div>h1 {
+    font-family: arial;
+    font-size: 3em;
+    letter-spacing: -1.3px;
+}
+
+.info1>div>p {
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+.info2 {
+    text-align: center;
+}
+
+.info2 h1 {
+    font-size: 3.2em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.info2 div {
+    font-size: 1.7em;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    text-align: start;
+    animation-delay: 0.6s;
+}
+
+.info1>img {
+    position: absolute;
+    width: 33em;
+    z-index: -1;
+    right: 4.5em;
+    animation-delay: 1.4s;
+}
+
+/* footer */
+
+footer {
+    background-color: #4d4c4c;
+    margin-top: 0em;
+    padding-top: 16px;
+}
+
+.footer_head {
+    text-align: center;
+    font-size: 1.7em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_main>div>h2 {
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer_main>div>h4 {
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+
+.footer_main>div>p,
+.footer_main>div>nav {
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: -0.7;
+}
+
+.footer_main>div>nav a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.footer_footer {
+    text-align: center;
+    padding: 1em 0em 1em 0em;
+}
+
+/* animation part */
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: move-up 0.5s linear 0.3s 1 forwards;
+}
+
+@keyframes move-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* screen on phone  max width = 600px*/
+
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #E6E6DD;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-shadow: gray 4px 4px;
+    }
+
+    header>img {
+        width: 10%;
+        border-radius: 10px 10px 10px 10px;
+        margin-right: 1rem;
+    }
+
+    .head1 {
+        display: none;
+    }
+
+    .fa-bars {
+        margin-left: 1rem;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    /* drop down */
+    .dropdown {
+        display: inline-block;
+        position: relative;
+
+    }
+
+    .dropdown_content {
+        position: absolute;
+        display: none;
+        background-color: white;
+        box-shadow: 2px 2px 20px grey;
+        border-radius: 10px;
+        z-index: 1;
+        margin-left: 1rem;
+        width: 2em;
+        text-align: start;
+        height: 18em;
+        overflow: hidden;
+    }
+
+    .dropdown_content>a {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+        padding-top: 7px;
+        padding-left: 20px;
+        font-size: 17px;
+    }
+
+    .dropdown_content>a:hover {
+        background-color: #E6E6DD;
+    }
+
+    .dropdown:hover .dropdown_content {
+        display: block;
+    }
+
+    /* whatsapp link on page */
+
+    .whatsapp {
+        top: 40rem;
+        font-size: 166px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .main1_container {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: azure;
+    }
+
+    .main1_container>h1 {
+        letter-spacing: 10px;
+        font-size: 2rem;
+        font-style: italic;
+        color: #D1A365;
+    }
+
+    .main2_container>button {
+        width: 20rem;
+        height: 4rem;
+        background-color: #ED7A7A;
+        font-style: normal;
+        letter-spacing: 5px;
+        font-size: large;
+        font-family: arial;
+        border: none;
+        border-radius: 20px 20px 20px 20px;
+        cursor: pointer;
+        right: 0;
+        margin: 0 0rem 1rem 5rem;
+    }
+
+    /* slides section */
+    .slide {
+        background-color: #E6E6DD;
+        padding-bottom: 0em;
+        padding-top: 0em;
+    }
+
+    .mySlides {
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 2px 2px 20px grey;
+        padding-bottom: 5px;
+        margin: 0rem 0rem 0rem 0rem;
+        background-color: white;
+        width: 100%;
+    }
+
+    .mySlides>img {
+        width: 100%;
+        height: 20em;
+        margin-top: 2rem;
+    }
+
+    .mySlides>div {
+        font-size: 22px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: -0.14px;
+        text-align: center;
+    }
+
+    .mySlides>div>p {
+        font-size: 20px;
+    }
+
+    .mySlides>div>button {
+        width: 14rem;
+        height: 5rem;
+        background-color: #ED7A7A;
+        font-style: normal;
+        font-size: x-large;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 0;
+        box-shadow: none;
+        border-radius: 20px 20px 20px 20px;
+        cursor: pointer;
+    }
+
+    .mySlides>div>p>span {
+        font-size: large;
+    }
+
+    .but {
+        display: none;
+        justify-content: center;
+    }
+
+    .but>div>button {
+        margin: 0rem 1rem auto;
+        background-color: #D1A365;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+    }
+
+
+    .info {
+        display: inline-block;
+        justify-content: none;
+        margin: 1em
+    }
+
+    .info1 {
+        text-align: center;
+        margin-right: 2.5em;
+        margin-top: 1em;
+    }
+
+
+    .info1>div>h1 {
+        font-family: arial;
+        font-size: 2em;
+        letter-spacing: -1.3px;
+    }
+
+    .info1>div>p {
+        font-size: 1.5em;
+        font-family: sans-serif;
+    }
+
+    .info2 {
+        text-align: center;
+    }
+
+    .info2 h1 {
+        font-size: 2em;
+    }
+
+    .info2 p {
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .info1>img {
+        position: static;
+        width: 100%;
+    }
+
+    /* footer */
+    footer {
+        background-color: #4d4c4c;
+        margin-top: 0em;
+        padding-top: 1px;
+    }
+
+    .footer_head {
+        text-align: center;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer_main {
+        display: flex;
+        justify-content: space-around;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .footer_main>div>h2 {
+        font-size: 1.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .footer_main>div>h4 {
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    }
+
+    .footer_main>div>p {
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: -0.7;
+    }
+
+    .footer_footer {
+        text-align: center;
+        padding: 0em 0em 0.5em 0em;
+    }
+
+}

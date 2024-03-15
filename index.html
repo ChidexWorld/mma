@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>MMA_WEBSITE</title>
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <i class="fa fa-bars fa-2x"></i>
+            <div class="dropdown_content">
+                <a href="#">HOME</a><br>
+                <a href="#" onclick="about_us">ABOUT US</a><br>
+                <a href="#">MENU</a><br>
+                <a href="#">CONTACT US</a><br>
+                <a href="#">ABOUT US</a><br>
+                <a href="#">ORDER NOW</a>
+            </div>
+        </div>
+        <div class="head1">
+            <h5 onclick="toggle(home)" class="active" id="home">HOME</h5>
+            <h5 onclick="toggle(about)" id="abt">ABOUT US</h5>
+            <h5 onclick="toggle(menu)" id="menu">MENU</h5>
+        </div>
+        <img src="images/LOGO.png" alt="LOGO">
+        <div class="icons">
+            <i class="fa fa-user fa-lg" onclick="toggle(contact)"></i>
+            <div class="cart_container">
+                <p class="counter">0</p>
+                <a href="cart/cart.html" target="_blank"><i class="fa fa-shopping-cart fa-lg"></i></a>
+            </div>
+            <i class="fa fa-search fa-sm"></i>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- static icon -->
+        <section>
+            <div class="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=09024308888&amp;text=Hi,%2we%20use%20ToChat.Be;"
+                    target="_blank"><i class="fa-brands fa-square-whatsapp fa-5x" style="color: #046c31;"></i>
+                </a>
+            </div>
+        </section>
+        <section class="first_section">
+            <div class="main1_container">
+                <h1 class="anikm"><strong>MMA'S <br>DELICAKE</strong></h1>
+                <p class="anipm">
+                    Cakes are special.<br>Every birthday, every celebration ends with something sweet,<br>a cake
+                    and
+                    people remember.It's all about memories.<br>
+                    Make your occasion fabulous with delicious pastries
+                </p>
+            </div>
+            <div class="main2_container">
+                <button class="main2_btn anim">
+                    <h4>ORDER NOW</h4>
+                </button>
+            </div>
+        </section>
+
+        <section class="second_section"> <!-- slide section -->
+            <div class="slide">
+                <div class="mySlides">
+                    <img src="images/firstslide.jpg" alt="">
+                    <div>
+                        <h1>WE MAKE</h1>
+                        <P>
+                            Fruit Cake | Chocolate Cake | <br>Red | Velvet | Coconut Cake |<br> Sponge Cake | Carrot
+                            Cake
+                        </P>
+                        <button>
+                            <h4>ORDER NOW</h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/secondslide.jpg" alt="">
+                    <div>
+                        <h1>WE ALSO MAKE</h1>
+                        <P>
+                            Small Chops | Doughnuts | <br>Peanuts | Fish Pie | Meat Pie |<br> Cup Cake | Bread | Pop
+                            Corn |<br> Sausage Roll
+                            And lost more.....
+                        </P>
+                        <button>
+                            <h4>ORDER NOW</h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="images/thirdslide.jpg" alt="">
+                    <div>
+                        <h1> INGREDIENTS</h1>
+                        <P>
+                            We bake with home made <br> and nourishing fruits and <br> ingredients like honey, yogurts
+                            <br> and strawberries that helps <br> to grow the skin and
+                            body. <br>
+                            <span><i> check the ingredients we use below.....</i></span>
+                        </P>
+                        <button>
+                            <h4>ORDER NOW</h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="but">
+                    <div><button class="btn1"><strong></strong></button></div>
+                    <div><button class="btn2"><strong></strong></button></div>
+                    <div><button class="btn3"><strong></strong></button></div>
+                </div>
+                <!-- <div class="prev">prev</div>
+                <div class="prev">next</div> -->
+            </div>
+        </section>
+
+        <section class="third_section">
+            <div class="menu">
+                <div>
+                    <div>
+                        <h2>Our Menu</h2>
+                    </div>
+                    <div>
+                        <button><strong>ALL</strong></button>
+                        <button><strong>CAKE</strong></button>
+                        <button><strong>SHAWAMA</strong></button>
+                        <button><strong>PIZZA</strong></button>
+                        <button><strong>BUGGER</strong></button>
+                    </div>
+                </div>
+
+                <div class="menu_content_container">
+                    <div id="first_row">
+                        <div class="menu_content ">
+                            <div>
+                                <img src="images/cake.jpg" alt="Cake">
+                            </div>
+                            <div>
+                                <h3>RED VELVET</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Eligendi consequatur odio
+                                    laudantium
+                                    quae blanditiis.
+                                </p>
+                            </div>
+                            <div>
+                                <span>&dollar;12</span>
+                                <i class="fa-solid fa-cart-plus adder" style="color:orange; cursor:pointer"
+                                    onclick="adder()"></i>
+                            </div>
+                        </div>
+                        <div class="menu_content">
+                            <div>
+                                <img src="images/cake.jpg" alt="Cake">
+                            </div>
+                            <div>
+                                <h3>RED VELVET</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Eligendi consequatur odio
+                                    laudantium
+                                    quae blanditiis.
+                                </p>
+                            </div>
+                            <div>
+                                <span>&dollar;12</span>
+                                <i class="fa-solid fa-cart-plus adder" style="color:orange; cursor:pointer"
+                                    onclick="adder()"></i>
+                            </div>
+                        </div>
+                        <div class="menu_content">
+                            <div>
+                                <img src="images/cake.jpg" alt="Cake">
+                            </div>
+                            <div>
+                                <h3>RED VELVET</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Eligendi consequatur odio
+                                    laudantium
+                                    quae blanditiis.
+                                </p>
+                            </div>
+                            <div>
+                                <span>&dollar;12</span>
+                                <i class="fa-solid fa-cart-plus adder" style="color:orange; cursor:pointer"
+                                    onclick="adder()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second_row">
+                        <div class="menu_content ">
+                            <div>
+                                <img src="images/cake.jpg" alt="Cake">
+                            </div>
+                            <div>
+                                <h3>RED VELVET</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Eligendi consequatur odio
+                                    laudantium
+                                    quae blanditiis.
+                                </p>
+                            </div>
+                            <div>
+                                <span>&dollar;12</span>
+                                <i class="fa-solid fa-cart-plus adder" style="color:orange; cursor:pointer"
+                                    onclick="adder()"></i>
+                            </div>
+                        </div>
+                        <div class="menu_content">
+                            <div>
+                                <img src="images/cake.jpg" alt="Cake">
+                            </div>
+                            <div>
+                                <h3>RED VELVET</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Eligendi consequatur odio
+                                    laudantium
+                                    quae blanditiis.
+                                </p>
+                            </div>
+                            <div>
+                                <span>&dollar;12</span>
+                                <i class="fa-solid fa-cart-plus adder" style="color:orange; cursor:pointer"
+                                    onclick="adder()"></i>
+                            </div>
+                        </div>
+                        <div class="menu_content">
+                            <div>
+                                <img src="images/cake.jpg" alt="Cake">
+                            </div>
+                            <div>
+                                <h3>RED VELVET</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Eligendi consequatur odio
+                                    laudantium
+                                    quae blanditiis.
+                                </p>
+                            </div>
+                            <div>
+                                <span>&dollar;12</span>
+                                <i class="fa-solid fa-cart-plus adder" style="color:orange; cursor:pointer"
+                                    onclick="adder()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third_row">
+                        <div class="menu_content ">
+                            <div>
+                                <img src="images/cake.jpg" alt="Cake">
+                            </div>
+                            <div>
+                                <h3>RED VELVET</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Eligendi consequatur odio
+                                    laudantium
+                                    quae blanditiis.
+                                </p>
+                            </div>
+                            <div>
+                                <span>&dollar;12</span>
+                                <i class="fa-solid fa-cart-plus adder" style="color:orange; cursor:pointer"
+                                    onclick="adder()"></i>
+                            </div>
+                        </div>
+                        <div class="menu_content">
+                            <div>
+                                <img src="images/cake.jpg" alt="Cake">
+                            </div>
+                            <div>
+                                <h3>RED VELVET</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Eligendi consequatur odio
+                                    laudantium
+                                    quae blanditiis.
+                                </p>
+                            </div>
+                            <div>
+                                <span>&dollar;12</span>
+                                <i class="fa-solid fa-cart-plus adder" style="color:orange; cursor:pointer"
+                                    onclick="adder()"></i>
+                            </div>
+                        </div>
+                        <div class="menu_content">
+                            <div>
+                                <img src="images/cake.jpg" alt="Cake">
+                            </div>
+                            <div>
+                                <h3>RED VELVET</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Eligendi consequatur odio
+                                    laudantium
+                                    quae blanditiis.
+                                </p>
+                            </div>
+                            <div>
+                                <span>&dollar;12</span>
+                                <i class="fa-solid fa-cart-plus adder" style="color:orange; cursor:pointer"
+                                    onclick="adder()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view_more">
+                        <button onclick="view_btn()" id="view"><span id="view_content">View More</span><i
+                                class="fa-solid fa-sort-down"></i></button>
+                    </div>
+                </div>
+        </section>
+
+        <section class="fourth_section">
+            <div class="info">
+                <div class="info2">
+                    <h1 class="info_details"><em>We Deliver FAST,<br> Fresh <br>And Instant</em></h1>
+                    <div class="info_details1">
+                        <p>We bring joy to your door faster than light</p>
+                        <p>Hot tasty food wll reach you in 20mins</p>
+                        <p>Be seated and eat us at our service 24hour</p>
+                        <p>Location is not and can never be a barrier</p>
+                    </div>
+                </div>
+                <div class="info1">
+                    <div class="info_details2 info-content">
+                        <h1><strong>100% <br> FAST DELIVERY</strong></h1>
+                        <p>Eat while it's hot</p>
+                    </div>
+                    <img src="images/delivery_girl.svg" alt="img" class="info_details3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_head">
+            <h1>ABOUT US</h1>
+        </div>
+        <hr>
+        <div class="footer_main">
+            <div>
+                <h2>OUR SERVICE</h2>
+                <h4>WE OFFER<br> OUTDOOR SERVICE SUCH AS:</h4>
+                <p>
+                    Birthday Party <br>
+                    Wedding Ceremony <br>
+                    Birthday Ceremony <br>
+                    Child Dedication <br>
+                    Christmas Party <br>
+                    Graduation Party <br>
+                    andd lots more...
+                </p>
+            </div>
+            <div>
+                <h2>LOCATION</h2>
+                <h4>FIRST BRANCH:</h4>
+                <p>NO. 29 Niger Street,<br> Fegge, Onitsha, <br>Anambra State</p>
+                <h4>Second Branch:</h4>
+                <p>
+                    COOU,<br>
+                    IGBARIUM CAMPUS,<br>
+                    Anambra State
+                </p>
+            </div>
+            <div>
+                <h2>CONTACT US</h2>
+                <nav>
+                    <a href="tel"><i class="fa-solid fa-phone"></i> 09033008375</a> <br><br>
+                    <a href="https://api.whatsapp.com/send?phone=09024308888&amp;text=Hi,%2we%20use%20ToChat.Be;"
+                        target="_blank"><i class="fa-brands fa-whatsapp"></i> 09033008375</a><br><br>
+                    <a href=""><i class="fa-brands fa-facebook"></i> Chi Di mma</a><br><br>
+                    <a href=""><i class="fa-brands fa-instagram"></i> mma_deli_cake</a> <br><br>
+                    <a href="email"><i class="fa-regular fa-envelope"></i> chiderastanley272@gmail.com</a> <br>
+                </nav>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_footer">
+            <p>&copy; 2023Copyright: ChidexTrump </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
